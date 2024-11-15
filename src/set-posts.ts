@@ -35,14 +35,16 @@ if (answer === 'y') {
 }
 
 const post = await bot.post({
-  text: 'Like the replies to this post to receive labels.',
+  text: 'Like the replies to this post to choose what kind of fujin you are!',
   threadgate: { allowLists: [] },
 });
 
-const labelNames = LABELS.map((label) => label.locales.map((locale) => locale.name).join(' | '));
+const labelNames = LABELS.map((label) => label.post);
 const labelRkeys: Record<string, string> = {};
+let replyToPost = post;
 for (const labelName of labelNames) {
-  const labelPost = await post.reply({ text: labelName });
+  const labelPost = await replyToPost.reply({ text: labelName });
+  replyToPost = labelPost;
   labelRkeys[labelName] = labelPost.uri.split('/').pop()!;
 }
 
@@ -52,7 +54,7 @@ for (const [name, rkey] of Object.entries(labelRkeys)) {
   console.log(`    rkey: '${rkey}',`);
 }
 
-const deletePost = await bot.post({ text: 'Like this post to delete all labels.' });
+const deletePost = await replyToPost.reply({ text: 'Like this post to delete all labels assigned to you.' });
 const deletePostRkey = deletePost.uri.split('/').pop()!;
 console.log('Delete post rkey:');
 console.log(`export const DELETE = '${deletePostRkey}';`);

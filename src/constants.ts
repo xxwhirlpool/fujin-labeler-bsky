@@ -5,42 +5,50 @@ export const LABEL_LIMIT = 1;
 export const LABELS: Label[] = [
   {
     rkey: 'insert-rkey-here',
-    identifier: 'earth',
+    identifier: 'slug',
+    post: "🪱 Slug: A×B and only A×B (has a fixed OTP: a favorite ship, with no switching and no multishipping)",
     locales: [
-      { lang: 'en', name: 'Earth 🌎', description: 'Earth'},
-      { lang: 'pt-BR', name: 'Terra 🌎', description: 'Terra'},
+      { lang: 'en', name: '🪱 Slug', description: 'A×B and only A×B'},
     ]
   },
   {
     rkey: 'insert-rkey-here',
-    identifier: 'fire',
+    identifier: 'snake',
+    post: "🐍 Snake: anyone × B (has a fixed uke: multiships, but their favorite can only bottom)",
     locales: [
-      { lang: 'en', name: 'Fire 🔥', description: 'Fire'},
-      { lang: 'pt-BR', name: 'Fogo 🔥', description: 'Fogo'},
+      { lang: 'en', name: '🐍 Snake', description: 'Anyone × B'},
     ]
   },
   {
     rkey: 'insert-rkey-here',
-    identifier: 'air',
+    identifier: 'frog',
+    post: "🐸 Frog: A×B & B×A but no A×C (has a reversible OTP: no multishipping, but can accept switching in their favorite ship)",
     locales: [
-      { lang: 'en', name: 'Air 💨', description: 'Air'},
-      { lang: 'pt-BR', name: 'Ar 💨', description: 'Ar'},
+      { lang: 'en', name: '🐸 Frog', description: 'A×B & B×A but no A×C'},
     ]
   },
   {
     rkey: 'insert-rkey-here',
-    identifier: 'water',
+    identifier: 'gecko',
+    post: "🦎 Gecko: A × anyone (\"seme freak\" who only wants their favorite to top)",
     locales: [
-      { lang: 'en', name: 'Water 💧', description: 'Water'},
-      { lang: 'pt-BR', name: 'Água 💧', description: 'Água'},
+      { lang: 'en', name: '🦎 Gecko', description: 'A × anyone'},
     ]
   },
   {
     rkey: 'insert-rkey-here',
-    identifier: 'love',
+    identifier: 'snail',
+    post: "🐌 Snail: anything × B (uses a mob character as seme for their favorite uke, either because there are no options in canon or because they only care about the one character; tentacles are also an option)",
     locales: [
-      { lang: 'en', name: 'Love 💞', description: 'Love'},
-      { lang: 'pt-BR', name: 'Amor 💞', description: 'Amor'},
+      { lang: 'en', name: '🐌 Snail', description: 'anything × B'}
+    ]
+  },
+  {
+    rkey: 'insert-rkey-here',
+    identifier: 'turtle',
+    post: "🐢 Turtle: omnivore, will try anything (can accept any ship in any order)",
+    locales: [
+      { lang: 'en', name: '🐢 Turtle', description: 'anyone x anyone'}
     ]
   },
 ];
