@@ -14,7 +14,7 @@ in
 
     src = lib.snowfall.fs.get-file "/";
     
-    npmDepsHash = "sha256-qvZM9MoLB+1fX63XNAfSJJupxdqCDeXwRcyT0uRdKVk=";
+    npmDepsHash = "sha256-0F/3Cd+CQOP4nIpDkDnFq+7LumspGN0Brwdbq8If1zo=";
 
     nodejs = nodejs_22;
 
