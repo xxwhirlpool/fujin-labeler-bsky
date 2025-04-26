@@ -13,7 +13,7 @@ in
     inherit (package-json) version;
 
     src = lib.snowfall.fs.get-file "/";
-
+    
     npmDepsHash = "sha256-g3aojITRoeQNtMwmAMjo4McvdYqKwoBmVr1568vRVKY=";
 
     nodejs = nodejs_22;
