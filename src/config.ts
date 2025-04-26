@@ -8,5 +8,7 @@ export const FIREHOSE_URL = process.env.FIREHOSE_URL ?? 'wss://jetstream.atproto
 export const WANTED_COLLECTION = 'app.bsky.feed.like';
 export const BSKY_IDENTIFIER = process.env.BSKY_IDENTIFIER ?? '';
 export const BSKY_PASSWORD = process.env.BSKY_PASSWORD ?? '';
-export const CURSOR_UPDATE_INTERVAL =
+export const CURSOR_UPDATE_INTERVAL = 
   process.env.CURSOR_UPDATE_INTERVAL ? Number(process.env.CURSOR_UPDATE_INTERVAL) : 60000;
+export const DB_PATH = process.env.DB_PATH;
+export const CURSOR_FILE_PATH = process.env.CURSOR_FILE_PATH!;
