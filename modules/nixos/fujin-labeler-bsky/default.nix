@@ -32,7 +32,7 @@ in {
         host = mkOption {
             type = types.str;
             description = "The public host name to serve.";
-            example = "example.com";
+            example = "fujinlabeler.fujocoded.com/";
         };
 
         port = mkOption {
