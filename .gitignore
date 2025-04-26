@@ -5,3 +5,5 @@ cursor.txt
 labels.db*
 bun.lockb
 result/
+result
+result/*
