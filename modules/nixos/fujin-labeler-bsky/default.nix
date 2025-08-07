@@ -32,18 +32,18 @@ in {
         host = mkOption {
             type = types.str;
             description = "The public host name to serve.";
-            example = "example.com";
+            example = "fujinlabeler.fujocoded.com/";
         };
 
         port = mkOption {
             type = types.port;
-            default = 4105;
+            default = 4107;
             description = "The port the labeler should listen on.";
         };
 
         metricsPort = mkOption {
             type = types.port;
-            default = 4106;
+            default = 4108;
             description = "The port for the labeler metrics.";
         };
 
@@ -136,7 +136,7 @@ in {
             forceSSL = true;
         
             locations."/" = {
-                proxyWebsockets = true;
+            	proxyWebsockets = true;
                 proxyPass = "http://127.0.0.1:${toString cfg.port}";
             };
         }; 
